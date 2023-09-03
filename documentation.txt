@@ -1,0 +1,7 @@
+Extraction approach --> 
+
+01 - Build a class User as a mega class with tons of methods.
+
+02 - Refactor user to use composition.
+
+03 - Refactor User to be a reuseable class that can represent any piece of data, not just a User.
