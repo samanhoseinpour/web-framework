@@ -131,6 +131,9 @@ var User = /** @class */function () {
   User.prototype.getUserData = function (userProp) {
     return this.data[userProp];
   };
+  User.prototype.setUserData = function (update) {
+    Object.assign(this.data, update);
+  };
   return User;
 }();
 exports.User = User;
@@ -144,6 +147,10 @@ var User_1 = require("./models/User");
 var user = new User_1.User({
   name: 'saman',
   age: 21
+});
+user.setUserData({
+  name: 'sajjad',
+  age: 25
 });
 console.log(user.getUserData('name'), user.getUserData('age'));
 },{"./models/User":"src/models/User.ts"}],"../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
