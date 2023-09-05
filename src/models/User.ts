@@ -49,4 +49,14 @@ export class User {
       console.log(error);
     }
   }
+
+  async save(): Promise<void> {
+    const id = this.get('id');
+
+    if (id) {
+      await axios.put(`http://localhost:3000/users/${id}`, this.data);
+    } else {
+      await axios.post('http://localhost:3000/users', this.data);
+    }
+  }
 }
