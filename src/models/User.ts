@@ -19,9 +19,16 @@ export class User {
   constructor(attrs: UserProps) {
     this.attributes = new Attributes<UserProps>(attrs);
   }
-}
 
-const user = new User({ name: 'saman', age: 21 });
-const userName = user.attributes.get('name');
-const userAge = user.attributes.get('age');
-console.log(userName, userAge);
+  get on() {
+    return this.events.on;
+  }
+
+  get trigger() {
+    return this.events.trigger;
+  }
+
+  get get() {
+    return this.attributes.get;
+  }
+}
