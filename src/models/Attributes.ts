@@ -9,9 +9,9 @@ export class Attributes<T> {
     for (let data in update) {
       this.data[data] = update[data];
     }
+  }
 
-    // ts has no idea whats the type of update (it should be Obj)
-    // therefore, we can't use .assign.
-    // Object.assign(this.data, update);
+  getAll(): T {
+    return this.data;
   }
 }

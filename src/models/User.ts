@@ -50,4 +50,17 @@ export class User {
       this.set(response.data);
     });
   }
+
+  save(): void {
+    const userAttributes = this.attributes.getAll();
+
+    this.sync
+      .save(userAttributes)
+      .then((response: AxiosResponse): void => {
+        this.trigger('saved');
+      })
+      .catch(() => {
+        this.trigger('Cannot save the user info!');
+      });
+  }
 }
