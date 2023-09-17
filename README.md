@@ -6,6 +6,6 @@ In this repo, I create a client-side Framework similar to React, Vue, Angular or
 
 ![Composition](./diagram/composition.png)
 
-# Composition approach
+# Inheritance approach
 
 ![Inheritance](./diagram/inheritance.png)
