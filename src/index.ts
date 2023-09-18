@@ -5,6 +5,7 @@ const root = document.querySelector('#root');
 
 const user = User.buildUser({ name: 'NAME', age: 21 });
 
-const userForm = new UserForm(root, user);
-
-userForm.render();
+if (root) {
+  const userForm = new UserForm(root, user);
+  userForm.render();
+}
