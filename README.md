@@ -4,11 +4,11 @@ In this repo, I create a client-side Framework similar to React, Vue, Angular or
 
 # Composition approach - Models
 
-![Models-Composition](./src/public/diagram/models-composition.png)
+![Composition](./src/public/diagram/models-composition.png)
 
 # Inheritance approach - Models
 
-![Models-Inheritance](./src/public/diagram/models-inheritance.png)
+![Inheritance](./src/public/diagram/models-inheritance.png)
 
 # View Classes
 
