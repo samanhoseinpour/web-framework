@@ -12,4 +12,4 @@ In this repo, I create a client-side Framework similar to React, Vue, Angular or
 
 # View Classes
 
-![Views](./src/public/diagram/views.png)
+![View](./src/public/diagram/views.png)
