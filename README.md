@@ -13,3 +13,5 @@ In this repo, I create a client-side Framework similar to React, Vue, Angular or
 # View Classes
 
 ![View](./src/public/diagram/views.png)
+
+# Wrapup
